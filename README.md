@@ -25,4 +25,37 @@ Play filters        >>  filters.component.jsx
 Poster              >>  poster.component.jsx
 Poster Slider       >>  posterSliders.component.jsx
 
-Continue Day-52 from 34:26
+# Tailwind CSS
+Advanced features present on the top of Bootstrap
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+Run these two in the terminal, then add three lines in the index.css, then run the application
+npm run start
+className are also present here just like in Bootstrap
+
+# React Slick
+A library for Carousel
+npm install react-slick
+npm install slick-carousel
+Install the react slick and the slick carousel and then import some instructions in app.js after removing some negations in the start
+
+# React Axios
+Promise based HTTP client for the browser and node.js, main connection between APIs
+npm i axios
+
+# Headless UI
+Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
+npm install @headlessui/react
+
+# React Icons
+Just like font-awesome icons, react also has its own icons
+npm install react-icons
+To get any icons from here, just import the code that is written on the official website
+
+# Browser Router
+It is a standard library for routing in React.
+It enables navigation between views from different components in a React application, allows the browser URL to be changed, and keeps the UI in sync with the URL.
+npm i react-router-dom
+After installation, import the package in index.js
+
+Continue Day-52 from 01:15:34
