@@ -2,6 +2,10 @@
 
 We'll use things like HTML5, CSS3, Tailwind, ReactJs, MongoDb, react-slicks (for carousel), react-icons, react-context-api (for state management || redux), etc.
 
+# React
+npx create-react-app.
+From this the react app gets created directly in the same directory, now we don't have to do cd file_name everytime before doing npm start
+
 # Pages
 home.page.jsx (default.hoc.jsx)
 movie.page.jsx (movie.hoc.jsx)
@@ -33,6 +37,9 @@ Run these two in the terminal, then add three lines in the index.css, then run t
 npm run start
 className are also present here just like in Bootstrap
 
+# Tailwind Shades
+A website where you can find code to any mixture of shades you want
+
 # React Slick
 A library for Carousel
 npm install react-slick
@@ -58,4 +65,4 @@ It enables navigation between views from different components in a React applica
 npm i react-router-dom
 After installation, import the package in index.js
 
-Continue Day-52 from 01:15:34
+Continue Day-55 from 18:36
