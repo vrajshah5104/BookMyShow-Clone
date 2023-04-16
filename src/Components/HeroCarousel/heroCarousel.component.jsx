@@ -80,8 +80,8 @@ const HeroCarousel = () => {
                 {/* Accessing settings for small screen size using spread operator */}
                 <HeroSlider {...settings}>
                 {
-                    images.map((image) => {
-                        <div className="w-full h-56 md:h-80 py-3">
+                    images.map((image, index) => {
+                        <div className="w-full h-56 md:h-80 py-3" key={index} >
                             {/* Hosting the above images in a MovieDb */}
                             <img src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                                  alt="Hero Banner"
@@ -96,8 +96,8 @@ const HeroCarousel = () => {
                 {/* Accessing settings for large screen size using spread operator */}
                 <HeroSlider {...settingsLG}>
                 {
-                    images.map((image) => {
-                        <div className="w-full h-96 px-2 py-3">
+                    images.map((image, index) => {
+                        <div className="w-full h-96 px-2 py-3" key={index} >
                             {/* Hosting the above images in a MovieDb */}
                             <img src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                                  alt="Hero Banner"

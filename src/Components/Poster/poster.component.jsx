@@ -2,11 +2,26 @@ import React from 'react';
 
 import Slider from 'react-slick';
 import PosterSlider from '../PosterSlider/posterSlider.component';
+import { Link } from 'react-router-dom';
 
-const Poster = () => {
+const Poster = (props) => {
     return (
         <>
-            <div>Poster</div>
+            {/* All these 'original_title' and stuff comes from the API link of TMDB */}
+            {/* Link tag, 'to' represents which component we want to link */}
+            <Link to={`/movie/${props.id}`}>
+                <div className='flex flex-col items-start gap-2 px-1 md:px-3'>
+                    <div className='h-40 md:h-80'>
+                        <img src={`https://image.tmdb.org/t/p/original${props.poster_path}`}
+                             alt="Poster"
+                             className='w-full h-full rounded-md'
+                        />
+                    </div>
+                    <h3 className={`text-lg font-bold ${props.isDark ? "text-white" : "text-gray-700"}`}>
+                        {props.title}
+                    </h3>
+                </div>
+            </Link>
         </>
     )
 }

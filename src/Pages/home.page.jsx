@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+
+import axios from 'axios';
 
 // Importing Layout HOC here
 import defaultLayoutHOC from '../Layout/default.layout';
@@ -14,6 +16,18 @@ const HomePage = () => {
     const [recommendedMovies, setRecommendedMovies] = useState([]);
     const [premierMovies, setPremierMovies] = useState([]);
     const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
+
+    useEffect (() => {
+        const requestTopRatedMovies = async () => {
+            // Using 'axios' to call the database
+            const getTopRatedMovies = await axios.get(
+                'https://api.themoviedb.org/3/movie/top_rated?api_key=ed9fe9c0168e49fb6e4d77f2cfc39c41'
+            );
+            setRecommendedMovies(getTopRatedMovies.data.results)
+        }
+        requestTopRatedMovies();
+    // Default array [] if the function isn't called somehow
+    }, []);
 
     return (
         <>
