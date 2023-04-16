@@ -13,6 +13,7 @@ import PosterSlider from '../Components/PosterSlider/posterSlider.component';
 const HomePage = () => {
     // Creating states here to store information with respect to particular components
     // Can pass a value but there are multiple values soo they will have array as a default value
+    // These are three APIs
     const [recommendedMovies, setRecommendedMovies] = useState([]);
     const [premierMovies, setPremierMovies] = useState([]);
     const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
@@ -21,12 +22,35 @@ const HomePage = () => {
         const requestTopRatedMovies = async () => {
             // Using 'axios' to call the database
             const getTopRatedMovies = await axios.get(
-                'https://api.themoviedb.org/3/movie/top_rated?api_key=ed9fe9c0168e49fb6e4d77f2cfc39c41'
+                '/movie/top_rated'
             );
             setRecommendedMovies(getTopRatedMovies.data.results)
         }
         requestTopRatedMovies();
     // Default array [] if the function isn't called somehow
+    }, []);
+
+    useEffect (() => {
+        const requestPopularMovies = async () => {
+            const getPopularMovies = await axios.get (
+                // URL ma 'top-rated' change thai ne bani gayu 'popular' 
+                // All of this can be found from the TMDB
+                '/movie/popular'
+            );
+            setPremierMovies(getPopularMovies.data.results)
+        }
+        requestPopularMovies();
+    }, []);
+
+    useEffect (() => {
+        const requestUpcomingMovies = async () => {
+            const getUpcomingMovies = await axios.get (
+                // Ahiya 'popular' change thai gayu 'upcoming' mate
+                '/movie/upcoming'
+            );
+            setOnlineStreamEvents(getUpcomingMovies.data.results)
+        }
+        requestUpcomingMovies();
     }, []);
 
     return (

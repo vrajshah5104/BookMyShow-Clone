@@ -81,15 +81,17 @@ Example API Request = https://api.themoviedb.org/3/movie/550?api_key=ed9fe9c0168
 API Read Access Token (v4 auth) = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDlmZTljMDE2OGU0OWZiNmU0ZDc3ZjJjZmMzOWM0MSIsInN1YiI6IjY0M2JhZGU1MmVhNmI5MDRjNzUxM2Q5NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.x81JVRESGNBQphLXZgHazZUG0rQn1gLPf5z17Gr3c2c
 
 # SELF NOTES
-We write components such as layouts, pages etc. You should write the basic structure yourself but for shortcut u can just type 'rafce' and get the entire basic structure.
-RAFCE stands for returnArrowFunctionExportComponent.
-The workflow goes like this, Index.js calls app, in app.js by-default the url is '/' soo it'll call home page, but homepage is wrapped within defualtHOC soo it'll call default defaultHOC, that'll call the navbar component and soo on.
-If we change the url to '/plays', it'll call the play page, every other call is same along with the output, just the home page output will change to play page.
-Same when the url is '/movies', it'll take the flow to movie page and movieNavbar.
-When we pass 'props', we also pass a certain 'config' information for all the props.
-Whenever you use $ symbol, use `${}`
-InOrder to connect front-end and back-end, we need to have Axios
-'useEffect' will always have a callback function, here we write all the API related information.
-Jya jya pan map kariyu che use, tya tya index and key={index} kari devanu, it will make sure that all the elements are unique, ana thi bahu errors jata reh.
+==> We write components such as layouts, pages etc. You should write the basic structure yourself but for shortcut u can just type 'rafce' and get the entire basic structure.
+==> RAFCE stands for returnArrowFunctionExportComponent.
+==> The workflow goes like this, Index.js calls app, in app.js by-default the url is '/' soo it'll call home page, but homepage is wrapped within defualtHOC soo it'll call default defaultHOC, that'll call the navbar component and soo on.
+==> If we change the url to '/plays', it'll call the play page, every other call is same along with the output, just the home page output will change to play page.
+==> Same when the url is '/movies', it'll take the flow to movie page and movieNavbar.
+==> When we pass 'props', we also pass a certain 'config' information for all the props.
+==> Whenever you use $ symbol, use `${}`
+==> InOrder to connect front-end and back-end, we need to have Axios
+==> 'useEffect' will always have a callback function, here we write all the API related information.
+==> Jya jya pan map kariyu che use, tya tya index and key={index} kari devanu, it will make sure that all the elements are unique, ana thi bahu errors jata reh.
+==> homePage can have hundreds of APIs, soo instead of writing long url for everyone, we can make it cleaner and shorter, homePage is called by App.js, we can import the axios there and include the baseURL and the api_key there only because both of them are common in every url in the APIs present in the homePage.
+==> Third way of doing the same is making an .env file and storing the api_key there because it is considered a safe place(good practice when making some banking application or etc.) and then importing and calling the .dotenv file in the App.js
 
-Continue Day-57 from 12:21
+Continue Day-58 from 13:19
