@@ -5,7 +5,7 @@ export function NextArrow(props) {
         <>
             {/* These props are passed from the 'heroCarousel.components' */}
             {/* In React 'style' always has double curly braces */}
-            <div className={props.className} style={{color: "red", padding: "10px", backgroundColor}} onClick={props.onClick}></div>
+            <div className={props.className} style={{color: "red", padding: "10px"}} onClick={props.onClick}></div>
         </>
     )
 }

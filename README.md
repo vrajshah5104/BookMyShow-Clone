@@ -65,4 +65,13 @@ It enables navigation between views from different components in a React applica
 npm i react-router-dom
 After installation, import the package in index.js
 
-Continue Day-55 from 18:36
+SELF NOTES
+We write components such as layouts, pages etc. You should write the basic structure yourself but for shortcut u can just type 'rafce' and get the entire basic structure.
+RAFCE stands for returnArrowFunctionExportComponent.
+The workflow goes like this, Index.js calls app, in app.js by-default the url is '/' soo it'll call home page, but homepage is wrapped within defualtHOC soo it'll call default defaultHOC, that'll call the navbar component and soo on.
+If we change the url to '/plays', it'll call the play page, every other call is same along with the output, just the home page output will change to play page.
+Same when the url is '/movies', it'll take the flow to movie page and movieNavbar.
+When we pass 'props', we also pass a certain 'config' information for all the props.
+Whenever you use $ symbol, use `${}`
+
+Continue Day-56

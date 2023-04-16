@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import defaultLayoutHOC from '../Layout/default.layout';
 
 // Importing Components here
-import EntertainmentCardComponent from '../Components/Entertainment/entertainmentCardComponent';
+import EntertainmentCardSlider from '../Components/Entertainment/entertainmentCardComponent';
 import HeroCarousel from '../Components/HeroCarousel/heroCarousel.component';
 import PosterSlider from '../Components/PosterSlider/posterSlider.component';
 
@@ -22,13 +22,13 @@ const HomePage = () => {
             {/* This is a React application so 'className' unlike plain html which has 'class' */}
             <div className="container mx-auto px-4 md:px-12 my-8">
                 <h1 className="text-2xl font-bold text-gray-800 sm:ml-3 ml-0 my-3">The Best of Entertainment</h1>
-                <EntertainmentCardComponent />
+                <EntertainmentCardSlider />
             </div>
             <div className="container mx-auto px-4 md:px-12 my-8">
                 <PosterSlider
                     // Passing props from homePage to here
                     title="Recommended Movies"
-                    subject="List of recommended movies"
+                    subtitle="List of recommended movies"
                     posters={recommendedMovies}
                     isDark={false}
                 />
@@ -41,7 +41,7 @@ const HomePage = () => {
                     </div>
                     <PosterSlider
                         title="Premiers"
-                        subject="Brand new releases every friday"
+                        subtitle="Brand new releases every friday"
                         posters={premierMovies}
                         isDark={true}
                     />
@@ -50,7 +50,7 @@ const HomePage = () => {
             <div className='container mx-auto px-4 md:px-12 my-8'>
                 <PosterSlider 
                     title="Online Streaming Events"
-                    subject="Online Stream Events"
+                    subtitle="Online Stream Events"
                     posters={onlineStreamEvents}
                     isDark={false}
                 />
