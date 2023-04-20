@@ -68,6 +68,11 @@ It enables navigation between views from different components in a React applica
 npm i react-router-dom
 After installation, import the package in index.js
 
+# Context API
+It is present on the top of our entire application
+Just like layout/HOCs where u don't want to call it multiple times so you create a common one, to not call the APIs again and again, we use the Context API.
+React Context API is React's way of managing state in multiple components that are not directly connected.
+
 # MovieDb
 The Movie Database (TMDB) is a popular user editable database for movies and TV shows.
 It gives all the free APIs to help make this application.
@@ -93,5 +98,7 @@ API Read Access Token (v4 auth) = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDlmZTljMDE2O
 ==> Jya jya pan map kariyu che use, tya tya index and key={index} kari devanu, it will make sure that all the elements are unique, ana thi bahu errors jata reh.
 ==> homePage can have hundreds of APIs, soo instead of writing long url for everyone, we can make it cleaner and shorter, homePage is called by App.js, we can import the axios there and include the baseURL and the api_key there only because both of them are common in every url in the APIs present in the homePage.
 ==> Third way of doing the same is making an .env file and storing the api_key there because it is considered a safe place(good practice when making some banking application or etc.) and then importing and calling the .dotenv file in the App.js
+==> The parent of 'movie.context.jsx' is 'movie.page'
+==> useState is used for props whereas useContext is build for APIs
 
-Continue Day-58 from 13:19
+Continue Day-60 from 21:41

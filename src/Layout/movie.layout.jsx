@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieNavbar from '../Components/Navbar/movieNavbar.component';
 
-const movieLayoutHOC = (Component) => ({...props}) => {
+const MovieLayoutHOC = (Component) => ({...props}) => {
     return (
         <div>
             <MovieNavbar />
@@ -11,4 +11,4 @@ const movieLayoutHOC = (Component) => ({...props}) => {
     )
 }
 
-export default movieLayoutHOC;
+export default MovieLayoutHOC;

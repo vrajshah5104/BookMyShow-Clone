@@ -65,7 +65,9 @@ const EntertainmentCardSlider = () => {
         <>
             <Slider {...settings}>
                 {/* Mapping each and every image present in the array */}
-                {EntertainmentImage.map((image, index) => <EntertainmentCard src={image} key={index} />)}
+                {EntertainmentImage.map((image, index) => (
+                    <EntertainmentCard src={image} key={index} />
+                ))}
             </Slider>
         </>
     )

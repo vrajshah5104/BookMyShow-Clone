@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
 // Importing Layout HOC here
-import defaultLayoutHOC from '../Layout/default.layout';
+import DefaultLayoutHOC from '../Layout/default.layout';
 
 // Importing Components here
 import EntertainmentCardSlider from '../Components/Entertainment/entertainmentCardComponent';
@@ -59,7 +59,9 @@ const HomePage = () => {
             {/* Using Tailwind */}
             {/* This is a React application so 'className' unlike plain html which has 'class' */}
             <div className="container mx-auto px-4 md:px-12 my-8">
-                <h1 className="text-2xl font-bold text-gray-800 sm:ml-3 ml-0 my-3">The Best of Entertainment</h1>
+                <h1 className="text-2xl font-bold text-gray-800 sm:ml-3 ml-0 my-3">
+                    The Best of Entertainment
+                </h1>
                 <EntertainmentCardSlider />
             </div>
             <div className="container mx-auto px-4 md:px-12 my-8">
@@ -74,7 +76,7 @@ const HomePage = () => {
             <div className="bg-premier-800 py-12">
                 <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
                     <div className="hidden md:flex">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/2560px-RuPay.svg.png"
+                        <img src=""
                              className='w-full h-full' alt="RuPay" />
                     </div>
                     <PosterSlider
@@ -98,4 +100,4 @@ const HomePage = () => {
 };
 
 // Passing 'homePage' as a parameter
-export default defaultLayoutHOC(HomePage);
+export default DefaultLayoutHOC(HomePage);

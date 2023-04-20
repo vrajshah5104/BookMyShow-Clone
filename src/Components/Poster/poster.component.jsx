@@ -1,7 +1,4 @@
 import React from 'react';
-
-import Slider from 'react-slick';
-import PosterSlider from '../PosterSlider/posterSlider.component';
 import { Link } from 'react-router-dom';
 
 const Poster = (props) => {
