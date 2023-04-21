@@ -53,6 +53,9 @@ npm i axios
 # Headless UI
 Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
 npm install @headlessui/react
+It can be used in ReactJs as well as ViewJs, but not in AngularJs.
+Unlike Bootstrap, In Tailwind we don't get pop-up windows, soo we use this UI.
+In Headless UI, go to Dailog(Modal) and copy the entire 'transition' tag from the code and use it for the PaymentModal Component.
 
 # React Icons
 Just like font-awesome icons, react also has its own icons
@@ -85,6 +88,12 @@ API Key (v3 auth) = ed9fe9c0168e49fb6e4d77f2cfc39c41
 Example API Request = https://api.themoviedb.org/3/movie/550?api_key=ed9fe9c0168e49fb6e4d77f2cfc39c41
 API Read Access Token (v4 auth) = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDlmZTljMDE2OGU0OWZiNmU0ZDc3ZjJjZmMzOWM0MSIsInN1YiI6IjY0M2JhZGU1MmVhNmI5MDRjNzUxM2Q5NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.x81JVRESGNBQphLXZgHazZUG0rQn1gLPf5z17Gr3c2c
 
+# RazorPay
+Interface for our payment getaway
+Most people in the IT sector use this because it has many advanced features to make it better
+To use this we need to create a script tag in index.html in the public folder and type this source code to connect to razorpay
+https://checkout.razorpay.com/v1/checkout.js
+
 # SELF NOTES
 ==> We write components such as layouts, pages etc. You should write the basic structure yourself but for shortcut u can just type 'rafce' and get the entire basic structure.
 ==> RAFCE stands for returnArrowFunctionExportComponent.
@@ -101,4 +110,4 @@ API Read Access Token (v4 auth) = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDlmZTljMDE2O
 ==> The parent of 'movie.context.jsx' is 'movie.page'
 ==> useState is used for props whereas useContext is build for APIs
 
-Continue Day-60 from 21:41
+Continue Day-60 from 01:19:58
