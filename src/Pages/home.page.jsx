@@ -22,7 +22,7 @@ const HomePage = () => {
         const requestTopRatedMovies = async () => {
             // Using 'axios' to call the database
             const getTopRatedMovies = await axios.get(
-                '/movie/top_rated'
+                '/top_rated'
             );
             setRecommendedMovies(getTopRatedMovies.data.results)
         }
@@ -35,7 +35,7 @@ const HomePage = () => {
             const getPopularMovies = await axios.get (
                 // URL ma 'top-rated' change thai ne bani gayu 'popular' 
                 // All of this can be found from the TMDB
-                '/movie/popular'
+                '/popular'
             );
             setPremierMovies(getPopularMovies.data.results)
         }
@@ -46,7 +46,7 @@ const HomePage = () => {
         const requestUpcomingMovies = async () => {
             const getUpcomingMovies = await axios.get (
                 // Ahiya 'popular' change thai gayu 'upcoming' mate
-                '/movie/upcoming'
+                '/upcoming'
             );
             setOnlineStreamEvents(getUpcomingMovies.data.results)
         }

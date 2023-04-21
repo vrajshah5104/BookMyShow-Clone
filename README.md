@@ -110,4 +110,4 @@ https://checkout.razorpay.com/v1/checkout.js
 ==> The parent of 'movie.context.jsx' is 'movie.page'
 ==> useState is used for props whereas useContext is build for APIs
 
-Continue Day-60 from 01:19:58
+Continue Day-65 from 01:06:50

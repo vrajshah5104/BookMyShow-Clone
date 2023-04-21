@@ -14,9 +14,9 @@ import MoviePage from './Pages/movie.page';
 import PlayPage from './Pages/play.page';
 
 // Calling the baseURL and the api key here only instead of calling it hundred times in the home.page
-axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.baseURL = "https://api.themoviedb.org/3/movie/550";
 axios.defaults.params = {};
-axios.defaults.params["?api_key="] = process.env.REACT_APP_API_KEY;
+axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
 
 function App() {
   return (
