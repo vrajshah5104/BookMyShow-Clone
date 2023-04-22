@@ -13,9 +13,9 @@ const Navsm = () => {
         <div>
           <h3 className="font-bold text-xl">{movie.original_title}</h3>
         </div>
-      </div>
-      <div className='w-8 h-8'>
-        <BiShareAlt className='w-full h-full' /> 
+        <div className='w-8 h-8'>
+          <BiShareAlt className='w-full h-full' /> 
+        </div>
       </div>
     </>
   )
@@ -27,7 +27,9 @@ const Navlg = () => {
       <div className='flex mx-auto px-4 container items-center justify-between'>
         <div className='flex items-center w-1/2 gap-3 '>
           <div className='w-10 h-10'>
-            <img src="" alt="Logo" className='w-full h-full' />
+            <img src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
+                  alt="Logo"
+                  className='w-full h-full' />
           </div>
           <div className="w-full flex items-center rounded-md gap-3 px-3 py-1 bg-white">
             <AiOutlineSearch />
@@ -39,7 +41,7 @@ const Navlg = () => {
         </div>
         <div className='flex items-center gap-3'>
           <span className='text-gray-200 flex text-base items-center cursor-pointer hover:text-white'>
-            Ahmedabad <HiChevronDown />
+            Bhubaneswar <HiChevronDown />
           </span>
           <button className='bg-red-600 text-white py-1 px-2 text-sm rounded'>
             Sign In
@@ -57,7 +59,7 @@ const MovieNavbar = () => {
   return (
     <>
       <nav className='bg-white border-b-2 lg:border-b-0 lg:bg-darkBackground-700 p-4'>
-        <div className='md:hidden'>
+        <div className='lg:hidden'>
           {/* For Small Screen Sizes */}
           <Navsm />
         </div>

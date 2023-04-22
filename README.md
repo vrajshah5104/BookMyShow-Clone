@@ -93,6 +93,10 @@ Interface for our payment getaway
 Most people in the IT sector use this because it has many advanced features to make it better
 To use this we need to create a script tag in index.html in the public folder and type this source code to connect to razorpay
 https://checkout.razorpay.com/v1/checkout.js
+Make a RazorPay account and run it in TEST MODE, don't even mistakenly run it in live mode, it will take actual money, get some random credit card number.
+This will generate a key and a secret key, always download this information.
+Write the code on payment.component file, this code remains the same for every applications
+When we click on buy or rent, it will open a test mode payment getaway, enter the random info and they will ask for otp on your number, enter that and it will show payment successfull just like any real application.
 
 # SELF NOTES
 ==> We write components such as layouts, pages etc. You should write the basic structure yourself but for shortcut u can just type 'rafce' and get the entire basic structure.
@@ -109,5 +113,3 @@ https://checkout.razorpay.com/v1/checkout.js
 ==> Third way of doing the same is making an .env file and storing the api_key there because it is considered a safe place(good practice when making some banking application or etc.) and then importing and calling the .dotenv file in the App.js
 ==> The parent of 'movie.context.jsx' is 'movie.page'
 ==> useState is used for props whereas useContext is build for APIs
-
-Continue Day-65 from 01:06:50

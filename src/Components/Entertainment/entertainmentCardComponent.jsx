@@ -4,10 +4,11 @@ import Slider from 'react-slick';
 // This component is the child of the 'EntertainmentCardSlider' component
 const EntertainmentCard = (props) => {
     return (
-        <div>
-            {/* The 'src' in 'props.src' here is taken from the parent 'src'  */}
-            <img src={props.src} alt="Entertainment" className='w-full h-full rounded-lg' />
-        </div>
+        <>
+            <div className='w-full h-30 px-2'>
+                <img src={props.src} alt="Entertainment" className='w-full h-full rounded-lg' />
+            </div>
+        </>
     )
 }
 
@@ -55,7 +56,6 @@ const EntertainmentCardSlider = () => {
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 2,
-                    initialSlide: 2
                 }
             }
         ]

@@ -3,7 +3,7 @@ import HeroSlider from 'react-slick';
 import { NextArrow, PrevArrow } from './arrows.components';
 
 const HeroCarousel = () => {
-    const [images, setImages] = useState([
+    const [images] = useState([
         // JSON structure within an array that is within an array
         {
             adult: false,
@@ -42,32 +42,25 @@ const HeroCarousel = () => {
     ]);
 
     const settingsLG = {
-        dots: true,
         arrows: true,
         slidesToShow: 1,
         infinite: true,
         // How fast the cards should move
         speed: 500,
         slideToScroll: 1,
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
         nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
+        prevArrow: <PrevArrow />,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        cssEase: "linear"
     };
 
     const settings = {
-        dots: true,
         arrows: true,
         slidesToShow: 1,
         infinite: true,
         speed: 500,
         slideToScroll: 1,
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
     };
@@ -79,14 +72,14 @@ const HeroCarousel = () => {
                 {/* Accessing settings for small screen size using spread operator */}
                 <HeroSlider {...settings}>
                 {
-                    images.map((image, index) => {
+                    images.map((images, index) => (
                         <div className="w-full h-56 md:h-80 py-3" key={index} >
                             {/* Hosting the above images in a MovieDb */}
                             <img src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                                  alt="Hero Banner"
                                  className='w-full h-full rounded-md object-cover' />
                         </div>
-                    })
+                    ))
                 }
                 </HeroSlider>
             </div>
@@ -95,14 +88,14 @@ const HeroCarousel = () => {
                 {/* Accessing settings for large screen size using spread operator */}
                 <HeroSlider {...settingsLG}>
                 {
-                    images.map((image, index) => {
+                    images.map((images, index) => (
                         <div className="w-full h-96 px-2 py-3" key={index} >
                             {/* Hosting the above images in a MovieDb */}
                             <img src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                                  alt="Hero Banner"
                                  className='w-full h-full rounded-md object-cover' />
                         </div>
-                    })
+                    ))
                 }
                 </HeroSlider>
             </div>

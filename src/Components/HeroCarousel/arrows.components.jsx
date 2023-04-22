@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function NextArrow(props) {
+export const NextArrow = (props) => {
     return (
         <>
             {/* These props are passed from the 'heroCarousel.components' */}
@@ -10,7 +10,7 @@ export function NextArrow(props) {
     )
 }
 
-export function PrevArrow(props) {
+export const PrevArrow = (props) => {
     return (
         <>
             <div className={props.className} style={{...props.style}} onClick={props.onClick}></div>

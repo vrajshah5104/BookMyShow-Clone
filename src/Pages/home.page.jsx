@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import axios from 'axios';
 
@@ -22,7 +22,7 @@ const HomePage = () => {
         const requestTopRatedMovies = async () => {
             // Using 'axios' to call the database
             const getTopRatedMovies = await axios.get(
-                '/top_rated'
+                "/movie/top_rated"
             );
             setRecommendedMovies(getTopRatedMovies.data.results)
         }
@@ -35,7 +35,7 @@ const HomePage = () => {
             const getPopularMovies = await axios.get (
                 // URL ma 'top-rated' change thai ne bani gayu 'popular' 
                 // All of this can be found from the TMDB
-                '/popular'
+                '/movie/popular'
             );
             setPremierMovies(getPopularMovies.data.results)
         }
@@ -46,7 +46,7 @@ const HomePage = () => {
         const requestUpcomingMovies = async () => {
             const getUpcomingMovies = await axios.get (
                 // Ahiya 'popular' change thai gayu 'upcoming' mate
-                '/upcoming'
+                '/movie/upcoming'
             );
             setOnlineStreamEvents(getUpcomingMovies.data.results)
         }
@@ -76,7 +76,7 @@ const HomePage = () => {
             <div className="bg-premier-800 py-12">
                 <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
                     <div className="hidden md:flex">
-                        <img src=""
+                        <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png"
                              className='w-full h-full' alt="RuPay" />
                     </div>
                     <PosterSlider
