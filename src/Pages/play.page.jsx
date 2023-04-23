@@ -2,7 +2,7 @@ import React from 'react';
 import DefaultLayoutHOC from '../Layout/default.layout';
 
 import Poster from '../Components/Poster/poster.component';
-import PlayFilter from '../Components/PlayFilter/playFilter.component';
+import PlayFilters from '../Components/PlayFilter/playFilter.component';
 
 const PlayPage = () => {
     return (
@@ -51,10 +51,10 @@ const PlayPage = () => {
             <div className='lg:w-1/4 p-4 bg-white rounded'>
                 <h2 className='text-2xl font-bold mb-4'>Filters</h2>
                 <div>
-                    <PlayFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
+                    <PlayFilters title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
                 </div>
                 <div>
-                    <PlayFilter title="Languages" tags={["English", "Hindi", "Gujarati"]} />
+                    <PlayFilters title="Languages" tags={["English", "Hindi", "Gujarati"]} />
                 </div>
             </div>
         </div>

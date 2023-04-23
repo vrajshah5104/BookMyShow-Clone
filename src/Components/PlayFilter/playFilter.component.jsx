@@ -2,7 +2,7 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
-const PlayFilter = (props) => {
+const PlayFilters = (props) => {
     return (
         // Similar to <> or <div> tags
         <Disclosure>
@@ -29,4 +29,4 @@ const PlayFilter = (props) => {
     )
 }
 
-export default PlayFilter;
+export default PlayFilters;

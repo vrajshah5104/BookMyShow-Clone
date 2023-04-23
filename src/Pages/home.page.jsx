@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 import axios from 'axios';
 
 // Importing Layout HOC here
 import DefaultLayoutHOC from '../Layout/default.layout';
-
 // Importing Components here
-import EntertainmentCardSlider from '../Components/Entertainment/entertainmentCardComponent';
+import EntertainmentCardSlider from '../Components/Entertainment/entertainmentCard.component';
 import HeroCarousel from '../Components/HeroCarousel/heroCarousel.component';
 import PosterSlider from '../Components/PosterSlider/posterSlider.component';
 

@@ -20,7 +20,7 @@ const PaymentModal = ({ setIsOpen, isOpen, price }) => {
             // RazorPay function called handler
             handler: () => {
                 setIsOpen(false);
-                alert("Payment Successful")
+                alert("Payment Successful");
             },
             theme: {color: "#c4242d"},
         };

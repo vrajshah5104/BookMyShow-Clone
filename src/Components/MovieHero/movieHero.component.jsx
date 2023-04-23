@@ -49,7 +49,7 @@ const MovieHero = () => {
                                 <MovieInfo movie={movie} />
                             </div>
                         </div>
-                        <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
+                        <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} 
                                 alt="BackDrop Poster"
                                 className='w-full h-full object-cover object-center'
                         />

@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import MovieLayoutHOC from '../Layout/movie.layout';
 import axios from 'axios';
@@ -150,7 +151,7 @@ const MoviePage = () => {
                             <div className='flex flex-col items-start'>
                                 <h3 className='text-gray-700 text-xl font-bold'>Visa Stream Offer</h3>
                                 <p className='text-gray-600'>
-                                    Get 75% OFF upto on INR 300 on all RuPay Cards for BookMyShow Stream*
+                                    Get 75% OFF upto on INR 300 on all RuPay Cards for BookMyShow Stream
                                 </p>
                             </div>
                         </div>

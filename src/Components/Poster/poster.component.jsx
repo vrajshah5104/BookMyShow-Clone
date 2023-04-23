@@ -43,7 +43,7 @@ const Poster = (props) => {
     if (props.isPlay) {
         return <PlayPoster {...props} />;
     }
-    return <MoviePoster {...props} />
+    return <MoviePoster {...props} />;
 };
 
 export default Poster;

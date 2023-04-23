@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { MovieContext } from '../../Context/movie.context';
-import { BiShareAlt, BiMenu } from 'react-icons/bi';
-import { AiOutlineSearch } from 'react-icons/ai';
-import { HiChevronDown } from 'react-icons/hi';
+import { BiShareAlt, BiMenu, BiSearch, BiChevronDown } from 'react-icons/bi';
 
 const Navsm = () => {
   const { movie } = useContext(MovieContext);
@@ -32,7 +30,7 @@ const Navlg = () => {
                   className='w-full h-full' />
           </div>
           <div className="w-full flex items-center rounded-md gap-3 px-3 py-1 bg-white">
-            <AiOutlineSearch />
+            <BiSearch />
             <input type="search"
                    className="w-full bg-transparent border-none focus:outline-none"
                    placeholder='Search for Movies, Events, Plays, Sports and Activities'
@@ -41,7 +39,7 @@ const Navlg = () => {
         </div>
         <div className='flex items-center gap-3'>
           <span className='text-gray-200 flex text-base items-center cursor-pointer hover:text-white'>
-            Bhubaneswar <HiChevronDown />
+            Bhubaneswar <BiChevronDown />
           </span>
           <button className='bg-red-600 text-white py-1 px-2 text-sm rounded'>
             Sign In

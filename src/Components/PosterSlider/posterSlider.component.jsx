@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Slider from 'react-slick';
 import Poster from '../Poster/poster.component';
 
@@ -11,7 +10,7 @@ const PosterSlider = (props) => {
         // All of this is present in the react-slick website
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
             {
